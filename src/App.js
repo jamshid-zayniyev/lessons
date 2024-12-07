@@ -12,6 +12,9 @@ import Navbar from "./components/navbar"
 // import Lessons from "./pages/lesson/lesson"
 // import Timer from "./pages/timer/timer"
 // import Games from "./pages/games/games"
+// import Movies from "./pages/movies/movies"
+
+
 import { Suspense, lazy } from "react"
 
 
@@ -24,6 +27,7 @@ const Timer = lazy(()=>import('./pages/timer/timer'))
 const Numbers = lazy(()=>import('./pages/numbers/numbers'))
 const Games = lazy(()=>import('./pages/games/games'))
 const SwiperCarousel = lazy(()=>import('./pages/swiper/swiperCarousel'))
+const Movies = lazy(()=>import('./pages/movies/movies'))
 
 function App(){
   return(
@@ -41,6 +45,7 @@ function App(){
           <Route path="/lessons" element={<Lessons/>}/>
           <Route path="/games" element={<Games/>}/>
           <Route path="/swiper" element={<SwiperCarousel/>}/>
+          <Route path="/movies" element={<Movies/>}/>
           <Route path="*" element={<h1>404 - Page not Found</h1>}/>
         </Routes>
 

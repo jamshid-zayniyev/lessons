@@ -15,6 +15,7 @@ const Navbar = () => {
         <Link to={'/numbers'} className="nav-link">Numbers</Link>
         <Link to={'/games'} className="nav-link">Games</Link>
         <Link to={'/swiper'} className="nav-link">Swiper</Link>
+        <Link to={'/movies'} className="nav-link">Movies</Link>
         <Link to={'/lessons'} className="nav-link">Lessons</Link>
 
         {/* <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
